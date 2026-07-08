@@ -1,0 +1,8 @@
+interface:
+  display_name: "High Fidelity HTML Reconstruction Image First"
+  short_description: "Hybrid image-first screenshot-to-HTML reconstruction"
+  brand_color: "#00AEEC"
+  default_prompt: "Use $high-fidelity-html-reconstruction to convert this screenshot into a high-fidelity hybrid image-first HTML page. First create a coverage inventory, prefer green-source image assets for fidelity-sensitive components such as cards, tables, charts, calendars, search bars, buttons, complex icons, avatars, activity rows, task rows, and status badges, then extract clean PNG assets with scripts/extract_green_source_assets.py, assemble the page with HTML/CSS layout, and verify the browser render against the screenshot."
+
+policy:
+  allow_implicit_invocation: true
