@@ -1,0 +1,12 @@
+# Keep Vercel deployment as a static website demo.
+# The repository also contains skill/python files, which should not be treated as Vercel Python functions.
+requirements.txt
+scripts/
+examples/
+references/
+agents/
+SKILL.md
+README-UPGRADED.md
+*.py
+__pycache__/
+*.pyc
