@@ -1,0 +1,9 @@
+{
+  "name": "high-fidelity-html-reconstruction-image-first-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo Static demo ready"
+  },
+  "devDependencies": {}
+}
