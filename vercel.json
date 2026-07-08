@@ -1,4 +1,7 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "installCommand": "echo No install needed",
+  "buildCommand": "echo Static demo ready",
+  "outputDirectory": "."
 }
