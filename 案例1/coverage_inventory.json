@@ -1,0 +1,61 @@
+{
+  "case": "案例1：高端企业官网复刻示例",
+  "strategy": "hybrid image-first",
+  "goal": "复刻生成的高端企业官网首页，图像负责复杂视觉，HTML/CSS负责结构和布局。",
+  "source_reference": "本次对话中生成的现代企业咨询网站首页设计图",
+  "regions": [
+    {
+      "region": "top-navigation",
+      "items": [
+        {"id": "logo", "kind": "logo", "representation": "green-source-image/svg-asset", "file": "assets/logo.svg"},
+        {"id": "nav-links", "kind": "navigation", "representation": "native-text + layout-html"},
+        {"id": "contact-button", "kind": "button", "representation": "layout-html", "note": "完整严格执行时可改为 green-source-image"}
+      ]
+    },
+    {
+      "region": "hero",
+      "items": [
+        {"id": "hero-title", "kind": "headline", "representation": "native-text"},
+        {"id": "hero-cta", "kind": "button-group", "representation": "layout-html", "note": "完整严格执行时可作为按钮图片资产"},
+        {"id": "hero-city", "kind": "complex-visual", "representation": "green-source-image/svg-asset", "file": "assets/hero-city.svg"},
+        {"id": "trust-row", "kind": "trust-badges", "representation": "native-text + layout-html"}
+      ]
+    },
+    {
+      "region": "services",
+      "items": [
+        {"id": "service-card-01", "kind": "card", "representation": "complete-card-image-preferred / layout-html-demo"},
+        {"id": "service-card-02", "kind": "card", "representation": "complete-card-image-preferred / layout-html-demo"},
+        {"id": "service-card-03", "kind": "card", "representation": "complete-card-image-preferred / layout-html-demo"},
+        {"id": "service-card-04", "kind": "card", "representation": "complete-card-image-preferred / layout-html-demo"},
+        {"id": "service-card-05", "kind": "card", "representation": "complete-card-image-preferred / layout-html-demo"},
+        {"id": "service-card-06", "kind": "card", "representation": "complete-card-image-preferred / layout-html-demo"}
+      ]
+    },
+    {
+      "region": "advantages-and-stats",
+      "items": [
+        {"id": "feature-row", "kind": "advantage-items", "representation": "green-source-image-preferred / layout-html-demo"},
+        {"id": "stats-strip", "kind": "statistics-block", "representation": "complete-card-image-preferred / layout-html-demo"}
+      ]
+    },
+    {
+      "region": "case-studies",
+      "items": [
+        {"id": "case-fintech", "kind": "case-card", "representation": "green-source-image/svg-asset + layout-html", "file": "assets/case-fintech.svg"},
+        {"id": "case-manufacturing", "kind": "case-card", "representation": "green-source-image/svg-asset + layout-html", "file": "assets/case-manufacturing.svg"},
+        {"id": "case-healthcare", "kind": "case-card", "representation": "green-source-image/svg-asset + layout-html", "file": "assets/case-healthcare.svg"}
+      ]
+    },
+    {
+      "region": "logos-testimonials-leadership-footer",
+      "items": [
+        {"id": "client-logo-row", "kind": "brand-strip", "representation": "layout-html-demo / image-first-preferred"},
+        {"id": "testimonial-cards", "kind": "card-group", "representation": "complete-card-image-preferred / layout-html-demo"},
+        {"id": "leadership-cards", "kind": "profile-card-group", "representation": "green-source-image-preferred / layout-html-demo"},
+        {"id": "footer", "kind": "footer", "representation": "layout-html"}
+      ]
+    }
+  ],
+  "note": "此案例为了可直接在 GitHub 查看，使用 SVG 资产模拟 image-first 的图像资产。完整执行 strict workflow 时，应根据 green_source_prompt.md 生成 green_source.png 并用 scripts/extract_green_source_assets.py 抠图后替换 assets。"
+}
